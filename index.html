@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naing Linn Htun | Mechanical Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a class="brand" href="#hero">Naing Linn Htun</a>
+        <ul class="nav-links">
+          <li><a href="#project">Project</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <p class="eyebrow">Master of Mechanical Engineering</p>
+          <h1>Naing Linn Htun</h1>
+          <p class="subheading">Universiti Malaysia Pahang Al-Sultan Abdullah</p>
+          <p class="summary">
+            Proficiency across mechanical engineering disciplines is demonstrated through analytical design and simulation work, with specialized expertise in automotive systems, renewable energy, and thermal engineering.
+          </p>
+          <a class="button primary" href="#project">View Project</a>
+        </div>
+        <div class="hero-visual">
+          <img src="" alt="Illustrative schematic of a nano-enhanced battery thermal management system" />
+        </div>
+      </section>
+
+      <section id="project" class="section-panel">
+        <div class="section-header">
+          <span class="section-tag">Project Title</span>
+          <h2>Nano-Enhanced Battery Thermal Management System</h2>
+        </div>
+        <div class="card-grid">
+          <article class="content-card">
+            <h3>Problem Statement</h3>
+            <p>
+              High-capacity lithium-ion batteries generate significant heat during operation, reducing performance and increasing the risk of thermal runaway. Effective thermal management is required to maintain battery reliability and preserve operational safety.
+            </p>
+          </article>
+          <article class="content-card">
+            <h3>Research Overview</h3>
+            <p>
+              The proposed solution integrates an L-shaped Oscillating Heat Pipe (OHP) with a liquid cooling circuit to improve heat dissipation. This configuration aims to enhance thermal transfer from the battery assembly to the cooling fluid while maintaining compact system geometry.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="methodology" class="section-panel alternate-panel">
+        <div class="section-header">
+          <span class="section-tag">Design Approach & Methodology</span>
+          <h2>Simulation and Assembly Strategy</h2>
+        </div>
+        <div class="methodology-grid">
+          <article class="method-block">
+            <h3>CAD Assembly</h3>
+            <p>
+              The SolidWorks assembly was developed to collect heat from the bottom of the batteries via collector plates, directing heat into the liquid domain through the L-shaped OHP. Cooling plates were designed to avoid direct contact with the battery cells while ensuring efficient thermal transfer.
+            </p>
+            <img src="" alt="CAD model diagram of a battery assembly with an L-shaped oscillating heat pipe" />
+          </article>
+          <article class="method-block">
+            <h3>Simulation Setup</h3>
+            <p>
+              A System Coupling module in ANSYS Workbench linked the thermal and fluid domains. This approach ensured synchronized calculation between solid conduction and fluid convection phenomena during the coupled analysis.
+            </p>
+          </article>
+          <article class="method-block">
+            <h3>Thermal Analysis</h3>
+            <p>
+              Steady-state thermal analysis was conducted using copper for the OHP, aluminum for the collector and cooling plates, and lithium-ion material properties for the battery cells. Material characteristics were applied to evaluate temperature distribution and heat flux.
+            </p>
+          </article>
+          <article class="method-block">
+            <h3>Fluid Flow Analysis</h3>
+            <p>
+              Fluid flow was modeled as laminar with velocities ranging from 0.1 m/s to 0.4 m/s within a 3 mm pipe. The analysis included continuity, momentum, and energy equations to capture the coupled thermal-fluid behavior of the coolant path.
+            </p>
+          </article>
+          <article class="method-block full-width">
+            <h3>Mesh Quality</h3>
+            <p>
+              Computational mesh optimization achieved an orthogonal quality of 0.797 with over 184,000 elements. This level of mesh refinement supported numerical reliability and increased confidence in the simulation results.
+            </p>
+            <img src="" alt="Mesh quality visual showing a refined finite element mesh for thermal-fluid simulation" />
+          </article>
+        </div>
+      </section>
+
+      <section id="results" class="section-panel">
+        <div class="section-header">
+          <span class="section-tag">Results & Conclusion</span>
+          <h2>CFD Findings and Performance Comparison</h2>
+        </div>
+        <div class="results-grid">
+          <article class="result-card">
+            <h3>CFD Summary</h3>
+            <p>
+              The CFD findings indicate that the combined OHP and liquid cooling architecture improves heat dissipation and stabilizes operating temperature. The simulation results confirm the effectiveness of the proposed thermal management system under realistic flow conditions.
+            </p>
+          </article>
+          <article class="result-card">
+            <h3>Fluid Comparison</h3>
+            <p>
+              Performance was compared between pure water and nanofluids at inlet temperatures of 283K, 293K, and 298K. The nanofluid case provided improved thermal stability across the evaluated temperature range.
+            </p>
+          </article>
+          <article class="result-card">
+            <h3>Velocity Impact</h3>
+            <p>
+              Moderate velocities near 0.3 m/s with nanofluids exhibited stable temperature performance and prevented sudden temperature fluctuations that were more pronounced with pure water. This result supports the selection of optimized flow conditions for enhanced battery thermal control.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section-panel alternate-panel contact-panel">
+        <div class="section-header">
+          <span class="section-tag">Contact</span>
+          <h2>Further Information</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p>Placeholder for professional profile link.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p>Placeholder for academic or professional email contact.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Resume</h3>
+            <p>Placeholder for downloadable resume link.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Mechanical Engineering portfolio presentation with focus on thermal management research and simulation methodology.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
